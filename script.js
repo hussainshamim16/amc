@@ -1,0 +1,86 @@
+document.addEventListener('DOMContentLoaded', function () {
+    // Hero Slider
+    let homeSlider = new Swiper(".homeSlider", {
+        slidesPerView: 1,    // Mobile default
+        spaceBetween: 20,
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+        loop: true,
+        breakpoints: {
+            // Mobile (0px - 575px)
+            0: {
+                slidesPerView: 1,
+            },
+
+            // Tablet (576px - 991px)
+            576: {
+                slidesPerView: 2,
+            },
+
+            // Laptop (992px - 1199px)
+            992: {
+                slidesPerView: 2.5,
+            },
+
+            // Desktop (1200px+)
+            1200: {
+                slidesPerView: 2.5,
+            },
+        }
+    });
+
+    // services slider
+    const Servicesswiper = new Swiper('.servicesSwiper', {
+        // loop: true,
+        centeredSlides: true,
+        initialSlide: 1,
+        slidesPerView: 3,
+        spaceBetween: 50,
+        speed: 400,
+        // autoplay: true,
+        grabCursor: true,
+
+        breakpoints: {
+            320: {
+                slidesPerView: 1,
+                spaceBetween: 20
+            },
+            768: {
+                slidesPerView: 3,
+                spaceBetween: 30
+            },
+            1024: {
+                slidesPerView: 3,
+                spaceBetween: 50
+            }
+        },
+
+        // Custom navigation arrows
+        navigation: {
+            nextEl: '.next',
+            prevEl: '.prev',
+        }
+    });
+
+
+    // sufiyan slider
+    let showCaseSwiper = new Swiper(".showCaseSwiper", {
+        slidesPerView: 2,
+        spaceBetween: 30,
+        centeredSlides: true,
+        loop: true,
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+        navigation: {
+            nextEl: ".show-swiper-button-next",
+            prevEl: ".show-swiper-button-prev",
+        },
+    });
+
+
+
+});

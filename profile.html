@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Business Hours UI</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f8faff;
+            margin: 40px;
+        }
+
+        .business-hours-container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 16px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+            overflow: hidden;
+        }
+
+        .business-hours-header.header {
+            background: #f0f4ff;
+            padding: 20px 30px;
+            border-bottom: 1px solid #e2e8f0;
+            font-size: 18px;
+            font-weight: 600;
+            color: #2d3748;
+        }
+
+        .day-row {
+            display: flex;
+            align-items: center;
+            padding: 18px 30px;
+            border-bottom: 1px solid #edf2f7;
+            transition: background 0.2s;
+        }
+
+        .day-row:hover {
+            background: #fafbff;
+        }
+
+        .day-name {
+            width: 120px;
+            font-weight: 500;
+            color: #4a5568;
+            font-size: 15px;
+        }
+
+        .checkbox-closed {
+            margin-left: 20px;
+        }
+
+        .checkbox-closed input {
+            margin-right: 8px;
+            transform: scale(1.1);
+            cursor: pointer;
+        }
+
+        .checkbox-closed label {
+            color: #718096;
+            font-size: 14px;
+            cursor: pointer;
+            user-select: none;
+        }
+
+        .time-inputs {
+            margin-left: auto;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-top: 20px;
+        }
+
+        .time-wrapper {
+            position: relative;
+        }
+
+        .time-wrapper label {
+            position: absolute;
+            top: -22px;
+            left: 0;
+            font-size: 12px;
+            color: #718096;
+            font-weight: 500;
+        }
+
+        .time-inputs input,
+        .time-inputs select {
+            width: 100px;
+            padding: 10px 12px;
+            border: 1.5px solid #e2e8f0;
+            border-radius: 8px;
+            font-size: 15px;
+            background: white;
+            transition: all 0.2s;
+        }
+
+        .time-inputs select:focus {
+            outline: none;
+            border-color: #4299e1;
+            box-shadow: 0 0 0 3px rgba(66, 153, 225, 0.15);
+        }
+
+        .add-session {
+            color: #4299e1;
+            font-size: 24px;
+            cursor: pointer;
+            margin-left: 20px;
+            transition: all 0.2s;
+        }
+
+        .add-session:hover {
+            color: #2b6cb0;
+            transform: scale(1.1);
+        }
+
+        /* Closed State Styling */
+        .closed .time-inputs {
+            opacity: 0.4;
+            pointer-events: none;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .day-row {
+                flex-wrap: wrap;
+                gap: 15px;
+            }
+
+            .day-name {
+                width: 100%;
+            }
+
+            .time-inputs {
+                margin-left: 0;
+            }
+
+            .checkbox-closed {
+                margin-left: 0px;
+                margin-bottom: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="business-hours-container">
+        <div class="business-hours-header header">Opening Hours</div>
+
+        <div class="day-row" data-day="monday">
+            <div class="day-name">Monday</div>
+            <div class="checkbox-closed">
+                <input type="checkbox" id="closed-mon">
+                <label for="closed-mon">Closed</label>
+            </div>
+            <div class="time-inputs">
+                <div class="time-wrapper">
+                    <label>Opens at</label>
+                    <select class="form-control time-select open-time-select" name="opening_hours[tuesday][0][open]"
+                        required="" data-day="tuesday">
+                        <option value="">09:00</option>
+                        <option value="24hours">24 Hours</option>
+                        <option value="00:00">00:00</option>
+                        <option value="00:30">00:30</option>
+                        <option value="01:00">01:00</option>
+                        <option value="01:30">01:30</option>
+                    </select>
+                </div>
+                <div class="time-wrapper">
+                    <label>Closes at</label>
+                    <select class="time-close" required="">
+                        <option value="">12:00</option>
+                        <option value="24hours">24 Hours</option>
+                        <option value="00:00">00:00</option>
+                        <option value="00:30">00:30</option>
+                        <option value="01:00">01:00</option>
+                        <option value="01:30">01:30</option>
+                    </select>
+                </div>
+                <div class="add-session" title="Add another time slot">+</div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        //  "Closed" time inputs
+        document.querySelectorAll('.checkbox-closed input').forEach(checkbox => {
+            checkbox.addEventListener('change', function () {
+                const row = this.closest('.day-row');
+                const timeInputs = row.querySelector('.time-inputs');
+
+                if (this.checked) {
+                    row.classList.add('closed');
+                    timeInputs.style.opacity = '0.4';
+                    timeInputs.style.pointerEvents = 'none';
+                } else {
+                    row.classList.remove('closed');
+                    timeInputs.style.opacity = '1';
+                    timeInputs.style.pointerEvents = 'auto';
+                }
+            });
+
+
+            if (checkbox.checked) {
+                checkbox.dispatchEvent(new Event('change'));
+            }
+        });
+
+        // "+" 
+        document.querySelectorAll('.add-session').forEach(btn => {
+            btn.addEventListener('click', function () {
+                alert('Add another time slot feature coming soon!');
+            });
+        });
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,141 @@
+.swiper.showCaseSwiper {
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+    padding-bottom: 40px;
+}
+
+.swiper.showCaseSwiper .swiper-wrapper {
+    height: unset !important;
+}
+
+.swiper.showCaseSwiper .swiper-pagination {
+    position: relative;
+    top: 4px !important;
+}
+
+.showCaseSwiper .swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background: #000; */
+}
+
+.showCaseSwiper .swiper-slide img {
+    width: 85%;
+    height: 50%;
+    object-fit: cover;
+    border-radius: 12px;
+    opacity: 0.2;
+}
+
+.swiper-slide.swiper-slide-active img {
+    opacity: 1;
+}
+
+.showCaseSwiper .swiper-button-prev {
+    left: 520px;
+}
+
+.showCaseSwiper .swiper-button-next {
+    right: 520px;
+}
+
+.showCaseSwiper .swiper-button-prev,
+.showCaseSwiper .swiper-button-next {
+    width: 50px;
+    height: 50px;
+    background: rgba(255, 255, 255, 0.1);
+    /* semi-transparent circle */
+    border: 2px solid #fff;
+    /* border like your image */
+    border-radius: 50%;
+    /* makes it circular */
+    color: #fff;
+    /* arrow color */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background 0.3s, transform 0.3s;
+}
+
+
+.showCaseSwiper span.swiper-pagination-bullet.swiper-pagination-bullet-active {
+    border-radius: 10px;
+    /* height: 10px; */
+    width: 30px;
+}
+
+.showCaseSwiper span.swiper-pagination-bullet {
+    background-color: #fff;
+}
+
+
+.showCaseSwiper .swiper-button-prev:hover,
+.showCaseSwiper .swiper-button-next:hover {
+    background: rgba(255, 255, 255, 0.3);
+    transform: scale(1.1);
+}
+
+.showCaseSwiper .swiper-button-prev::after,
+.showCaseSwiper .swiper-button-next::after {
+    font-size: 20px;
+    /* arrow size */
+    font-weight: bold;
+}
+
+/* footer bottom */
+.footerbottom {
+    height: 512px;
+    background: linear-gradient(90deg, #0295DA 0%, #0C538B 50%, #0D7EE3 100%);
+    border-radius: 30px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-top: 80px !important;
+
+}
+
+.footerbottom .content {
+
+    padding-left: 20px !important;
+}
+
+.house-image {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.footer-title {
+    font-size: 55px;
+    font-weight: 700;
+    color: white;
+    line-height: 1.1;
+    font-family: 'Helvetica';
+}
+
+.footer-text {
+    color: #DAEAF7;
+    max-width: 550px;
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+.footer-btn {
+    background: #031A49;
+    color: white;
+    padding: 15px 30px;
+    border-radius: 40px;
+    margin-top: 35px;
+    font-size: 16px;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    border: none;
+}
+
+.hero-btn:hover {
+    background: #021330;
+    color: white;
+}
