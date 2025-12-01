@@ -4,22 +4,22 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
+    <title>AMC Construction</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="./team.css">
-    <link rel="stylesheet" href="./style.css">
-    <!-- <link rel="stylesheet" href="./responsive.css"> -->
+    <link rel="shortcut icon" href="./images/transform-section-logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/responsive.css">
 </head>
 
 <body>
     <!-- header -->
-    <nav class="container navbar navbar-expand-lg ">
+    <nav class="container navbar navbar-expand-lg p-0">
         <div class="amc-navbar-container d-flex justify-content-between align-items-center">
 
             <a class="navbar-brand" href="#">
-                <img src="./logo.png" alt="logo">
+                <img src="../images/logo.png" alt="logo">
             </a>
 
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
@@ -29,13 +29,11 @@
 
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav mx-auto ">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
-                    <a class="nav-link" href="#">About</a>
-                    <a class="nav-link" href="#">Services</a>
-                    <a class="nav-link" href="#">Services Areas</a>
-                    <a class="nav-link" href="#">Blog</a>
-                    <a class="nav-link" href="#">FAQs</a>
-                    <a class="nav-link" href="#">Contact</a>
+                    <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+                    <a class="nav-link " href="./pages/about.html">About</a>
+                    <a class="nav-link " href="./pages/services.html">Services</a>
+                    <a class="nav-link " href="./pages/faq.html">FAQs</a>
+                    <a class="nav-link" href="./pages/contact.html">Contact</a>
                 </div>
             </div>
 
@@ -50,10 +48,11 @@
             </div>
         </div>
     </nav>
+
     <!-- Hero section -->
-    <section class="hero">
+    <section class="hero" style="background-image: linear-gradient(186deg, rgba(255, 0, 0, 0), rgba(0, 96, 186, 1)), url(./images/home-banner.jpg);">
         <div class="container d-flex align-items-center justify-content-start  vh-100">
-            <div class="content text-light w-50" >
+            <div class="content text-light w-50">
                 <h5>Building Your Dreams</h5>
                 <h1>Custom Home Builder in Columbia, TN</h1>
                 <h3>AMC Construction LLC</h3>
@@ -336,7 +335,7 @@
     </section>
 
     <!-- client Reviews-->
-     <section class="client-reviews"></section>
+    <section class="client-reviews"></section>
 
     <!-- footer -->
     <footer class="d-flex flex-column align-items-center py-5">
@@ -373,7 +372,7 @@
                         satisfaction since 2013.</p>
                 </div>
                 <div class="ft-logo ">
-                    <a href="/" class="text-decoration-none"><img src="./logo.png" alt="footerLogoImage"></a>
+                    <a href="/" class="text-decoration-none"><img src="./images/logo.png" alt="footerLogoImage"></a>
                 </div>
                 <div class="ft-bbb-logo ">
                     <img src="./images/footerImageRight.png" alt="">
@@ -463,7 +462,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
         crossorigin="anonymous"></script>
-    <script src="./script.js"></script>
+    <script src="./scripts/script.js"></script>
 </body>
 
 </html>
