@@ -6,8 +6,8 @@
 
 @font-face {
     font-family: 'DM-Sans';
-    src: url('./Fonts/DMSans-9ptRegular.woff2') format('woff2'),
-        url('./Fonts/DMSans-9ptRegular.woff') format('woff');
+    src: url('./fonts/DMSans-9ptRegular.woff2') format('woff2'),
+        url('./fonts/DMSans-9ptRegular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -15,8 +15,8 @@
 
 @font-face {
     font-family: 'Helvetica';
-    src: url('./Fonts/HelveticaNowDisplay-Regular.woff2') format('woff2'),
-        url('./Fonts/HelveticaNowDisplay-Regular.woff') format('woff');
+    src: url('./fonts/HelveticaNowDisplay-Regular.woff2') format('woff2'),
+        url('./fonts/HelveticaNowDisplay-Regular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -60,6 +60,14 @@ h6 {
     font-size: 1.2rem;
     border-radius: 10rem;
 }
+
+.ab-center {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translate(-0%, -50%);
+}
+
 
 .navbar .amc-navbar-container {
     position: absolute;
@@ -107,38 +115,27 @@ section.hero {
     background-repeat: no-repeat;
     background-size: cover;
 }
-
-section.hero .hero-container {
-    height: 100%;
-    color: white;
-    padding-right: 0;
-    padding-left: 200px;
+section.hero .content {
+        box-shadow: -800px 200px 110px -14px rgba(1, 255, 255, 0.3);
 }
-
-section.hero .hero-container .content-container {
-    width: 700px !important;
-    color: white;
-    box-shadow: -800px 200px 110px -14px rgba(1, 255, 255, 0.3);
-}
-
-section.hero .content-container h1 {
+section.hero h1 {
     font-size: 4rem;
     line-height: 75px;
     font-weight: 600;
 }
 
-section.hero .content-container h5 {
+section.hero h5 {
     font-size: 1.50rem;
     line-height: 30px;
 }
 
-section.hero .content-container h3 {
+section.hero h3 {
     line-height: 55px;
     font-size: 1.90rem;
     font-weight: 800;
 }
 
-section.hero .content-container p {
+section.hero p {
     font-size: 0.95rem;
     line-height: 19px;
     color: white;
@@ -221,16 +218,12 @@ section.hero .content-container p {
 
 
 /* why choose */
-section.whyChoose .why-images {
-    width: 50%;
+section.whyChoose {
+    position: relative;
+    padding-bottom: 70px;
 }
 
 section.whyChoose .why-content {
-    width: 600px;
-    position: relative;
-    left: 25rem;
-    top: 5rem;
-    height: fit-content;
     box-shadow: -680px 200px 230px -14px rgba(1, 255, 255, 0.3);
 }
 
@@ -419,6 +412,10 @@ section.whyChoose .why-content ul li {
     -webkit-background-clip: text !important;
     transform: translateY(80px);
     margin-top: -100px;
+    font-size: 15rem;
+    color: transparent;
+    text-transform: uppercase;
+    font-weight: 800;
 }
 
 

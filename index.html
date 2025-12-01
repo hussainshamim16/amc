@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./team.css">
     <link rel="stylesheet" href="./style.css">
-    <link rel="stylesheet" href="./responsive.css">
+    <!-- <link rel="stylesheet" href="./responsive.css"> -->
 </head>
 
 <body>
@@ -52,8 +52,8 @@
     </nav>
     <!-- Hero section -->
     <section class="hero">
-        <div class="hero-container d-flex align-items-center justify-content-between ">
-            <div class="content-container">
+        <div class="container d-flex align-items-center justify-content-start  vh-100">
+            <div class="content text-light w-50" >
                 <h5>Building Your Dreams</h5>
                 <h1>Custom Home Builder in Columbia, TN</h1>
                 <h3>AMC Construction LLC</h3>
@@ -74,27 +74,24 @@
                     </svg>
                 </div>
             </div>
-            <!-- <div class="hero-container  d-flex align-items-center justify-content-between "> -->
-            <!-- <div class="her-slider w-50 "></div> -->
-            <div class=" swiper homeSlider">
-                <span class="heading">Our Latest Project</span>
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide"><a href="#"><img src="./images/home (1).png" alt="HomeSlider"></a>
-                    </div>
-                    <div class="swiper-slide"><a href="#"><img src="./images/home (2).png" alt="HomeSlider"></a>
-                    </div>
-                    <div class="swiper-slide"><a href="#"><img src="./images/home (3).png" alt="HomeSlider"></a>
-                    </div>
-                    <div class="swiper-slide"><a href="#"><img src="./images/home (1).png" alt="HomeSlider"></a>
-                    </div>
-                    <div class="swiper-slide"><a href="#"><img src="./images/home (2).png" alt="HomeSlider"></a>
-                    </div>
-                    <div class="swiper-slide"><a href="#"><img src="./images/home (3).png" alt="HomeSlider"></a>
-                    </div>
+        </div>
+        <div class="ab-center swiper homeSlider">
+            <span class="heading">Our Latest Project</span>
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><a href="#"><img src="./images/home (1).png" alt="HomeSlider"></a>
                 </div>
-                <div class="swiper-pagination"></div>
+                <div class="swiper-slide"><a href="#"><img src="./images/home (2).png" alt="HomeSlider"></a>
+                </div>
+                <div class="swiper-slide"><a href="#"><img src="./images/home (3).png" alt="HomeSlider"></a>
+                </div>
+                <div class="swiper-slide"><a href="#"><img src="./images/home (1).png" alt="HomeSlider"></a>
+                </div>
+                <div class="swiper-slide"><a href="#"><img src="./images/home (2).png" alt="HomeSlider"></a>
+                </div>
+                <div class="swiper-slide"><a href="#"><img src="./images/home (3).png" alt="HomeSlider"></a>
+                </div>
             </div>
-            <!-- </div> -->
+            <div class="swiper-pagination"></div>
         </div>
     </section>
 
@@ -188,9 +185,9 @@
     </section>
 
     <!-- why choose section -->
-    <section class="whyChoose">
-        <div class="why-container container-fluid d-flex justify-content-between">
-            <div class="why-content">
+    <section class="whyChoose d-flex align-items-center vh-100">
+        <div class="container">
+            <div class="why-content w-50">
                 <h2 class="mb-5 secondGrand">Reasons To Choose AMC Construction LLC as your Custom Home Builder?
                 </h2>
                 <ul>
@@ -212,9 +209,9 @@
                     </svg>
                 </div>
             </div>
-            <div class="why-images d-flex">
-                <img src="./images/whyChoosePng.png" alt="whyChoose">
-            </div>
+        </div>
+        <div class="ab-center why-images text-end container-fluid">
+            <img src="./images/whyChoosePng.png" alt="whyChoose" class="w-50">
         </div>
     </section>
 
@@ -265,7 +262,7 @@
 
             </div>
         </div>
-        <section class="gradienttext showCaseH1">
+        <section class="showCaseH1 w-100">
             <h1 class="text-center ">Showcase</h1>
         </section>
     </section>
