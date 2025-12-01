@@ -11,7 +11,7 @@
 
 .swiper.showCaseSwiper .swiper-pagination {
     position: relative;
-    top: 4px !important;
+    top: 20px !important;
 }
 
 .showCaseSwiper .swiper-slide {
@@ -83,6 +83,10 @@
     /* arrow size */
     font-weight: bold;
 }
+
+
+
+
 
 /* footer bottom */
 .footerbottom {

@@ -408,6 +408,13 @@ section.whyChoose .why-content ul li {
     text-transform: uppercase;
 }
 
+.showCaseH1 h1 {
+    background: linear-gradient(to bottom, #9a9a9df0 -200%, #fff0 60%) !important;
+    -webkit-background-clip: text !important;
+    transform: translateY(80px);
+    margin-top: -100px;
+}
+
 
 /* showcase */
 section.showcase {
@@ -425,6 +432,32 @@ section.showcase .content h2 {
     font-size: 4rem;
 }
 
+.showCaseSwiper .swiper-button-prev {
+
+    left: 23%;
+}
+
+.showCaseSwiper .swiper-button-next {
+    right: 23%;
+}
+
+.showCaseSwiper .swiper-button-prev,
+.showCaseSwiper .swiper-button-next {
+    width: 55px;
+    height: 55px;
+    top: 44% !important;
+}
+
+.swiper-button-prev:after,
+.swiper-button-next:after {
+    content: '';
+}
+
+.swiper-button-next svg,
+.swiper-button-prev svg {
+    width: 40%;
+    height: 40%;
+}
 
 /* journey */
 section.journey {
@@ -432,7 +465,7 @@ section.journey {
     background-position: bottom;
     background-repeat: no-repeat;
     background-size: 2100px;
-    margin-top: 200px !important;
+    margin: 200px 0px !important;
 }
 
 .journey h2 {
@@ -471,6 +504,41 @@ section.journey {
     top: 6rem;
 }
 
+/* transform */
+.transform-section {
+    background-repeat: no-repeat !important;
+    align-items: center;
+    background-size: cover !important;
+    height: 900px;
+    margin-bottom: 150px;
+}
+
+.transform-content {
+    width: 80% !important;
+}
+
+.transform-content h1.transform-h {
+    font-size: 5.7rem;
+    line-height: 90px;
+}
+
+.transform-section .container {
+    height: 100%;
+}
+
+.transform-amc-logo {
+    width: 100%;
+    text-align: right;
+}
+
+.transform-amc-logo img {
+    width: 130px;
+}
+
+ /* client Reviews */
+ .client-reviews {
+    height: 900px;
+}
 
 
 

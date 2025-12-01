@@ -76,8 +76,8 @@ document.addEventListener('DOMContentLoaded', function () {
             clickable: true,
         },
         navigation: {
-            nextEl: ".show-swiper-button-next",
-            prevEl: ".show-swiper-button-prev",
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
         },
     });
 
