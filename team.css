@@ -86,18 +86,17 @@
 
 
 
-
-
 /* footer bottom */
 .footerbottom {
     height: 512px;
-    background: linear-gradient(90deg, #0295DA 0%, #0C538B 50%, #0D7EE3 100%);
+    background: linear-gradient(290deg, #0295DA 0%, #0C538B 50%, #0D7EE3 100%);
     border-radius: 30px;
     position: relative;
     display: flex;
     align-items: center;
-    margin-top: 80px !important;
-
+    padding-left: 30px;
+    transform: translateY(-280px);
+    margin-bottom: -200px;
 }
 
 .footerbottom .content {
@@ -113,7 +112,6 @@
 
 .footer-title {
     font-size: 55px;
-    font-weight: 700;
     color: white;
     line-height: 1.1;
     font-family: 'Helvetica';
@@ -122,7 +120,7 @@
 .footer-text {
     color: #DAEAF7;
     max-width: 550px;
-    font-size: 18px;
+    font-size: 17px;
     margin-top: 20px;
 }
 
