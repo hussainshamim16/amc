@@ -1,12 +1,7 @@
 .swiper.showCaseSwiper {
     width: 100%;
-    height: auto;
     margin-top: 20px;
     padding-bottom: 40px;
-}
-
-.swiper.showCaseSwiper .swiper-wrapper {
-    height: unset !important;
 }
 
 .swiper.showCaseSwiper .swiper-pagination {
@@ -100,7 +95,6 @@
 }
 
 .footerbottom .content {
-
     padding-left: 20px !important;
 }
 

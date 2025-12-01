@@ -41,6 +41,10 @@ h6 {
     font-family: 'Helvetica';
 }
 
+
+
+
+
 .secondGrand {
     background: linear-gradient(45deg, rgba(11, 4, 73, 1), rgba(11, 4, 73, 0));
     -webkit-background-clip: text;
@@ -114,6 +118,7 @@ section.hero .hero-container {
 section.hero .hero-container .content-container {
     width: 700px !important;
     color: white;
+    box-shadow: -800px 200px 110px -14px rgba(1, 255, 255, 0.3);
 }
 
 section.hero .content-container h1 {
@@ -226,6 +231,7 @@ section.whyChoose .why-content {
     left: 25rem;
     top: 5rem;
     height: fit-content;
+    box-shadow: -680px 200px 230px -14px rgba(1, 255, 255, 0.3);
 }
 
 section.whyChoose .why-images img {
@@ -234,9 +240,9 @@ section.whyChoose .why-images img {
 
 section.whyChoose .why-content h2 {
     font-size: 3rem;
-    font-weight: 600;
     background: linear-gradient(128deg, rgba(11, 4, 73, 1) 50%, rgba(11, 4, 73, 0));
     -webkit-background-clip: text;
+    box-shadow: 700px -30px 150px -20px rgba(1, 255, 255, 0.3);
 }
 
 section.whyChoose .why-content .amc-btn {
@@ -480,6 +486,7 @@ section.journey {
     width: 30%;
     position: relative;
     bottom: 4rem;
+    box-shadow: -400px 20px 130px -14px rgba(1, 255, 255, 0.3);
 }
 
 .journey .contentOne p {
@@ -502,6 +509,7 @@ section.journey {
     width: 30%;
     position: relative;
     top: 6rem;
+    box-shadow: 400px 20px 130px -14px rgba(1, 255, 255, 0.3);
 }
 
 /* transform */
@@ -535,8 +543,8 @@ section.journey {
     width: 130px;
 }
 
- /* client Reviews */
- .client-reviews {
+/* client Reviews */
+.client-reviews {
     height: 900px;
 }
 
