@@ -292,6 +292,25 @@
 /* Extra Css */
 @media (min-width : 1300px) and (max-width : 1500px) {
     .gradienttext h1 {
-          font-size: 9rem  !important;
+        font-size: 9rem !important;
+    }
+}
+
+@media (min-width: 2900px) and (max-width: 5000px) {
+    .homeSlider span.heading {
+        top: -15px;
+    }
+
+    .homeSlider.swiper {
+        padding: 50px 0px;
+        height: 460px;
+    }
+
+    .homeSlider .swiper-slide {
+        height: 300px;
+    }
+
+    .homeSlider .swiper-slide.swiper-slide-active:before {
+        top: 125px;
     }
 }

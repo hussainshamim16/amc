@@ -93,26 +93,28 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
     // process slider
-    var process = new Swiper(".process-swipper", {
-        slidesPerView: 1.2,
-        spaceBetween: 20,
-        centeredSlides: false,
-        loop: true,
-        breakpoints: {
-            768: {
-                slidesPerView: 3,
+    const processID = document.querySelector(".process-swipper");
+    if (processID) {
+        let processSwiper = new Swiper(".process-swipper", {
+            slidesPerView: 1.2,
+            spaceBetween: 20,
+            centeredSlides: false,
+            loop: true,
+            breakpoints: {
+                768: {
+                    slidesPerView: 3,
+                },
+                1024: {
+                    slidesPerView: 3.4,
+                },
+                1400: {
+                    slidesPerView: 4.2,
+                },
+            }, navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
             },
-            1024: {
-                slidesPerView: 4,
-            },
-            1400: {
-                slidesPerView: 5,
-            },
-        }, navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
-        },
-    });
-
+        });
+    }
 
 });
